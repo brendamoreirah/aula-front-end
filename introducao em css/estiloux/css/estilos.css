@@ -5,26 +5,46 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    border: 2px solid black;
+}
+
 
 body{
 
     background-color:antiquewhite;
+    border: 2px solid black;
 }
 
-header{
+header, footer{
     width: 100%;
-    height: 80px;
-    background-color: #727272;
+    height: 10%;
+    background-color: #b178d5;
 }
 
 
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 300px;
+    font-size: 25px;
+    font-weight: 100px;
     color: white;
 }
+.ux {
+    font-size: 30px;
+    margin-left: 3px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: monospace;
+
+}
+
+
+
+
+
+
 
 .layout-grid{
     width: 100%;
@@ -38,13 +58,73 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
-nav {
-    width: 480px;
-    height: 100%;
-    /* border: 3px solid white; */
-}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 400px;
+    height: 100%;
+   /* border: 3px solid white; */
+    
+}
+
+nav a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.4s, margin-left .8s, margin-bottom .8s; 
+
+}
+
+nav a:hover{
+    color: pink;
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 12px;
+    background-color:rgba(232, 232, 232, 0.4) ;
+
+   
+}
+
+main{
+    width: 100%;
+    height: 80%;
+    border: 3px solid palevioletred;
+}
+
+.main-flex{
+    border: 2px solid plum;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dac2ea;
+    border: 2px solid rgb(0, 193, 218);
+}
+ 
+.harmonia {
+    border: 2px solid black;
+   /* margin: 10px;*/
+    width:700px ;
+    height:100% ;
+    background-color: pink;
+
+
+}
+
+.pesquisa {
+    border: 2px solid black;
+   /* margin:10px ;*/
+    width: 250px ;
+    height: 100%;
+    background-color: pink;
+
 }
